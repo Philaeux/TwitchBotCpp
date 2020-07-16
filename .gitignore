@@ -31,6 +31,9 @@
 *.out
 *.app
 
-# Visual studio CMake files
+# Visual studio files
 .vs
 out
+
+# CFG Prod File
+twitchbotcpp/cfg/prod.cfg
