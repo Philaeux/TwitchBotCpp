@@ -10,7 +10,7 @@ include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup(TARGETS)
 
 # Sources setup
-add_executable (${CMAKE_PROJECT_NAME} "twitchbotcpp/TwitchBotCpp.cpp" "twitchbotcpp/TwitchBotCpp.h")
+add_executable (${CMAKE_PROJECT_NAME} "twitchbotcpp/TwitchBotCpp.cpp" "twitchbotcpp/TwitchBotCpp.h" "twitchbotcpp/Configuration.h" "twitchbotcpp/Configuration.cpp")
 file (GLOB cfg_files "twitchbotcpp/cfg/*")
 foreach(cfg_file ${cfg_files})
   get_filename_component(cfg_file_name ${cfg_file} NAME)
