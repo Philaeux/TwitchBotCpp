@@ -1,14 +1,14 @@
-﻿#include <memory>
-
+﻿#include "Configuration.h"
+#include "Strategy.h"
 #include "TwitchBotCpp.h"
-#include "Configuration.h"
+#include "TwitchChatClient.h"
 
-using namespace std;
+int main(int argc, char** argv) {
+	Configuration cfg;
+	cfg.parse_config(argc, argv);
 
-int main(int argc, char** argv)
-{
-	shared_ptr<Configuration> cfg = make_shared<Configuration>();
-	cfg->parse_config(argc, argv);	
-
-	return 0;
+	boost::asio::io_context io;
+	TwitchChatClient chat_client{cfg, io}; 
+	chat_client.connect();
+	io.run();
 }

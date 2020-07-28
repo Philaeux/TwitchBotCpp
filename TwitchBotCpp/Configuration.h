@@ -14,6 +14,7 @@ class Configuration {
         string api_client_id() { return _api_client_id; };
         string api_client_secret() { return _api_client_secret; };
         string api_client_oauth_token() { return _api_client_oauth_token; };
+        string strategy_sound_reward_id() { return _strategy_sound_reward_id; };
         void parse_config(const int& argc, char** argv);
 
     private:
@@ -24,4 +25,5 @@ class Configuration {
         string _api_client_id;
         string _api_client_secret;
         string _api_client_oauth_token;
+        string _strategy_sound_reward_id;
 };

@@ -40,7 +40,8 @@ void Configuration::parse_config(const int& argc, char** argv) {
 		("twitch_irc.channel", value<string>(&_irc_channel), "Channel to connect to in the irc server")
 		("twitch_api.client_id", value<string>(&_api_client_id), "Client ID for the twitch api")
 		("twitch_api.client_secret", value<string>(&_api_client_secret), "Client secret associated with the client id")
-		("twitch_api.client_oauth_token", value<string>(&_api_client_oauth_token), "Client oauth to login in specific api other than client secret");
+		("twitch_api.client_oauth_token", value<string>(&_api_client_oauth_token), "Client oauth to login in specific api other than client secret")
+		("strategy.sound_reward_id", value<string>(&_strategy_sound_reward_id), "Id of the reward used to start sounds");
 
 	string file_path = boost::filesystem::system_complete(argv[0]).parent_path().string() + "/cfg/" + _cfg_file;
 	try {
