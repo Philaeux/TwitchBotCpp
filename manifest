@@ -1,0 +1,10 @@
+: 1
+name: twitchbot
+version: 0.1.0-a.0.z
+summary: Twitch bot written in C++ to improve the streaming experience.
+license: GPL-3.0-only ; GNU General Public License v3.0 only.
+description-file: README.md
+url: https://github.com/Philaeux/twitchbot
+email: philaeux@the-cluster.org
+depends: * build2 >= 0.13.0
+depends: * bpkg >= 0.13.0

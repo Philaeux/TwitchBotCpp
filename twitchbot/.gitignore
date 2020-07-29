@@ -1,0 +1,5 @@
+twitchbot
+
+# Testscript output directory (can be symlink).
+#
+test-twitchbot

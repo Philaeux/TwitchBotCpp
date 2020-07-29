@@ -1,39 +1,32 @@
-# Prerequisites
-*.d
+.bdep/
 
-# Compiled Object files
-*.slo
-*.lo
+# Local default options files.
+#
+.build2/local/
+
+# Compiler/linker output.
+#
+*.d
+*.t
+*.i
+*.ii
 *.o
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
 *.so
-*.dylib
 *.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
 *.a
 *.lib
-
-# Executables
+*.exp
+*.pdb
+*.ilk
 *.exe
-*.out
-*.app
+*.exe.dlls/
+*.exe.manifest
+*.pc
 
-# Visual studio files
+# Prod Configuration
+twitchbot/cfg/prod.cfg
+
+# Visual studio
+CppProperties.json
 .vs
-out
-
-# CFG Prod File
-twitchbotcpp/cfg/prod.cfg
